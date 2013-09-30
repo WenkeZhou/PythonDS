@@ -28,7 +28,7 @@ class LinkTable():
     def create(self, elem):
         p = Node(elem)
         self.__r.next = p
-        self.__r = self.__r.next
+        self.__r = p
         self.length += 1
 
     def getelem(self, i):
