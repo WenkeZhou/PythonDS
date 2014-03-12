@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ghost'
 
+import sys
+sys.path.append('..')
+
+
 import unittest
-from SqQueue import SqQueue
+from src.Queue.SqQueue import SqQueue
 
 class TestSqQueue(unittest.TestCase):
 

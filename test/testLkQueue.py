@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ghost'
 
+import sys
+sys.path.append('..')
+
+
 import unittest
-from LkQueue import LinkQueue
+from src.Queue.LkQueue import LinkQueue
 
 class TestLinkQueue(unittest.TestCase):
 

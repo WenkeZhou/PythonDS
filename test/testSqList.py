@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ghost'
 
+import sys
+sys.path.append('..')
+
 import unittest
-from SqList import SqList
+from src.List.SqList import SqList
+
 
 class TestSqList(unittest.TestCase):
 

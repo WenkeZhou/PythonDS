@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ghost'
 
+import sys
+sys.path.append('..')
+
+
 import unittest
-from SqStack import SqStack
+from src.Stack.SqStack import SqStack
 
 class TestSqStack(unittest.TestCase):
 
