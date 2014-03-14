@@ -7,7 +7,27 @@ __author__ = 'ghost'
 """
 
 
-def brute_force(s, t):
+# def brute_force(s, t):
+#     """
+#         s是主串，t是字串，匹配成功返回匹配的位置，否则返回-1
+#     """
+#     len_s = len(s)
+#     len_t = len(t)
+#     if len_s == 0 or len_t == 0:
+#         raise ValueError, u'string is empty'
+#
+#     i, j, pos = 0, 0, -1
+#     while i < len_s and j < len_t:
+#         if s[i] == t[j]:
+#             i += 1
+#             j += 1
+#         else:
+#             i = i - j + 1
+#             j = 0
+#     pos = j == len_t and i - len_t or -1
+#     return pos
+
+def brute_force(s, t, pos=0):
     """
         s是主串，t是字串，匹配成功返回匹配的位置，否则返回-1
     """
@@ -16,7 +36,7 @@ def brute_force(s, t):
     if len_s == 0 or len_t == 0:
         raise ValueError, u'string is empty'
 
-    i, j, pos = 0, 0, -1
+    i, j, = pos, 0
     while i < len_s and j < len_t:
         if s[i] == t[j]:
             i += 1
@@ -27,8 +47,9 @@ def brute_force(s, t):
     pos = j == len_t and i - len_t or -1
     return pos
 
+
 if __name__ == '__main__':
     s = 'hello python elo'
-    t = 'elo'
+    t = 'lo'
 
     print brute_force(s, t)
