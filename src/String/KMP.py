@@ -144,8 +144,7 @@ def KMP(s, t, pos=0):
 if __name__ == '__main__':
     s = 'abcabe aaaaae abcabe'
     t = 'aaaaae'
-    print get_next(t)
-    print get_nexts(t)
+
     # print kmp_c(s, t, 8)
     # print KMP(s, t, 111)
 
