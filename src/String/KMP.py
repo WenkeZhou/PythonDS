@@ -138,26 +138,14 @@ def KMP(s, t, pos=0):
     return pos
 
 
-def get_nexts(t):
-
-    i, j = 0, -1
-    next = [-1] * len(t)
-    while i < len(t) - 1:
-        if j == -1 or t[i] == t[j]:
-            i += 1
-            j += 1
-            next[i] = j
-        else:
-            j = next[j]
-    return next
 
 
 
 if __name__ == '__main__':
-    s = 'abcabe abcabe abcabe'
-    t = 'abcabe'
+    s = 'abcabe aaaaae abcabe'
+    t = 'aaaaae'
     print get_next(t)
     print get_nexts(t)
     # print kmp_c(s, t, 8)
     # print KMP(s, t, 111)
-    print kmp(s, t, 9)
+
