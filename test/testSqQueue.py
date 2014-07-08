@@ -6,7 +6,7 @@ sys.path.append('..')
 
 
 import unittest
-from src.Queue.SqQueue import SqQueue
+from src.Queue.sqQueue import SqQueue
 
 class TestSqQueue(unittest.TestCase):
 

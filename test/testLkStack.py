@@ -6,7 +6,7 @@ sys.path.append('..')
 
 
 import unittest
-from src.Stack.LkStack import LinkStack
+from src.Stack.lkStack import LinkStack
 
 class TestLinkStack(unittest.TestCase):
 

@@ -5,7 +5,7 @@ import sys
 sys.path.append('..')
 
 import unittest
-from src.List.SqList import SqList
+from src.List.sqList import SqList
 
 
 class TestSqList(unittest.TestCase):

@@ -6,7 +6,7 @@ sys.path.append('..')
 
 
 import unittest
-from src.Queue.LkQueue import LinkQueue
+from src.Queue.lkQueue import LinkQueue
 
 class TestLinkQueue(unittest.TestCase):
 

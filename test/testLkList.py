@@ -2,10 +2,11 @@
 __author__ = 'ghost'
 
 import sys
-sys.path.append('..')
+sys.path.append('..')
+
 
 import unittest
-from src.List.LkList import LinkList
+from src.List.lkList import LinkList
 
 class TestLkList(unittest.TestCase):
 

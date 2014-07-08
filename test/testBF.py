@@ -6,7 +6,7 @@ sys.path.append('..')
 
 
 import unittest
-from src.String.BF import brute_force
+from src.String.bf import brute_force
 
 class testBF(unittest.TestCase):
 

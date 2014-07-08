@@ -6,7 +6,7 @@ sys.path.append('..')
 
 
 import unittest
-from src.Stack.SqStack import SqStack
+from src.Stack.sqStack import SqStack
 
 class TestSqStack(unittest.TestCase):
 
