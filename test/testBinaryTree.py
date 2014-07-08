@@ -63,10 +63,10 @@ class TestBinaryTree(unittest.TestCase):
         nlist = [1, 2, 6, 3, 5, 4, 7, 'root', 8]
         self.assertEquals(nlist, self.bt.in_list)
 
-    # def test_postorders(self):
-    #     self.bt.postorders(self.bt.root)
-    #     nlist = [1, 2, 3, 4, 5, 6, 7, 8, 'root']
-    #     self.assertEquals(nlist, self.bt.post_list)
+    def test_postorders(self):
+        self.bt.postorders(self.bt.root)
+        nlist = [1, 2, 3, 4, 5, 6, 7, 8, 'root']
+        self.assertEquals(nlist, self.bt.post_list)
 
     def test_levelorders(self):
         self.bt.levelorders(self.bt.root)
