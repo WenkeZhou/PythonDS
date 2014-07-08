@@ -53,6 +53,25 @@ class TestBinaryTree(unittest.TestCase):
         nlist = [1, 2, 3, 4, 5, 6, 7, 8, 'root']
         self.assertEquals(nlist, self.bt.post_list)
 
+    def test_preorders(self):
+        self.bt.preorders(self.bt.root)
+        nlist = ['root', 7, 6, 2, 1, 5, 3, 4, 8]
+        self.assertEquals(nlist, self.bt.pre_list)
+
+    def test_inorders(self):
+        self.bt.inorders(self.bt.root)
+        nlist = [1, 2, 6, 3, 5, 4, 7, 'root', 8]
+        self.assertEquals(nlist, self.bt.in_list)
+
+    # def test_postorders(self):
+    #     self.bt.postorders(self.bt.root)
+    #     nlist = [1, 2, 3, 4, 5, 6, 7, 8, 'root']
+    #     self.assertEquals(nlist, self.bt.post_list)
+
+    def test_levelorders(self):
+        self.bt.levelorders(self.bt.root)
+        nlist = ['root', 7, 8, 6, 2, 5, 1, 3, 4]
+        self.assertEquals(nlist, self.bt.level_list)
 
 
 if __name__ == '__main__':
