@@ -113,7 +113,7 @@ class BinaryTree(object):
         """
         stack = []
         while tree_node or stack:
-            if tree_node is not None:
+            if tree_node:
                 print tree_node.data
                 self.pre_list.append(tree_node.data)
                 stack.append(tree_node)
@@ -197,12 +197,21 @@ if __name__ == '__main__':
     -------------------------
 
     '''
+    #
+    # print '前序（pre-order，NLR）遍历 ：\n'
+    # bt.preorder(bt.root)
+    #
+    # print '中序（in-order，LNR) 遍历 ：\n'
+    # bt.inorder(bt.root)
+    #
+    # print '后序（post-order，LRN）遍历 ：\n'
+    # bt.postorder(bt.root)
 
-    print '前序（pre-order，NLR）遍历 ：\n'
-    bt.preorder(bt.root)
+    n1 = Node(data=4)
+    n2 = Node(data=2, right=n1)
+    n3 = Node(data=3)
+    n4 = Node(data=1, left=n2, right=n3)
 
-    print '中序（in-order，LNR) 遍历 ：\n'
-    bt.inorder(bt.root)
+    b = BinaryTree(n4)
+    b.post(b.root)
 
-    print '后序（post-order，LRN）遍历 ：\n'
-    bt.postorder(bt.root)
